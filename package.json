@@ -1,0 +1,27 @@
+{
+  "name": "trace-parcel",
+  "version": "0.1.0",
+  "description": "Turn a HAR recording into a focused, redacted bug report. Runs entirely on your machine.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "@phosphor-icons/core": "2.1.1",
+    "@types/node": "22.20.5",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenpingan-dev/trace-parcel.git"
+  }
+}

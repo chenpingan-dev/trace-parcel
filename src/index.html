@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Turn a HAR recording into a focused, redacted bug report. Inspect requests and export HTML, HAR or Markdown locally."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'sha256-SCRIPT_HASH'; style-src 'unsafe-inline'; img-src data:; frame-src about:; connect-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="theme-color" content="#f6f5f8" />
+    <title>Trace Parcel — Share the problem, keep the context</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23715adc'/%3E%3Cpath d='M10 14 20 9 30 14 30 26 20 31 10 26Z M10 14 20 19 30 14 M20 19V31 M15 11.5 25 16.5' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <style>
+      /* APP_CSS */
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <input id="har-file" type="file" accept=".har,.json,application/json" hidden />
+    <dialog id="export-dialog" aria-labelledby="export-heading"></dialog>
+    <dialog id="help-dialog" aria-labelledby="help-heading"></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script>
+      /* APP_JS */
+    </script>
+  </body>
+</html>

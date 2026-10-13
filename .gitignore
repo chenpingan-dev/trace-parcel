@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.local
+*.har
+!fixtures/*.har
+.DS_Store
